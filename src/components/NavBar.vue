@@ -4,7 +4,7 @@
   >
     <div class="flex items-center flex-shrink-0 text-teal-200 mr-6">
       <router-link to="/" class="font semibold tracking-light"
-        >Look At My Notes</router-link
+        >Internetworking Notes</router-link
       >
     </div>
   </nav>

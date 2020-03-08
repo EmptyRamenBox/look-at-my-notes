@@ -7,13 +7,13 @@ export default new Vuex.Store({
   state: {
     notes: [
       {
-        id: 0,
+        id: 1,
         title: "STP - Spanning Tree Protocol",
         content:
         "Layer 2 Protocol that uses STA, to prevent switching loops, by blocking some ports that are used in redundant links."
       },
       {
-        id: 1,
+        id: 2,
         title: "IP - Internet Protocol",
         content:
         "A Route Protocol that functions at Layer 3 of the OSI Model. Used to assign an logical address to a device in an IP network."
@@ -21,7 +21,7 @@ export default new Vuex.Store({
     ]
   },
   getters: {
-    getNotes: state => state.notes,
+    getNotes: state => state.notes.reverse(),
     getNote: state => id => state.notes.find(note => note.id === id)
   },
   mutations: {
